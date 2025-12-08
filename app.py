@@ -84,7 +84,7 @@ def train_random_forest(X_train, y_train):
 
 # --- Load Data and Train Model ---
 
-df_raw = load_data(file_path)
+df_raw = load_data(FILE_PATH)
 X_train, X_test, y_train, y_test, X_full, y_full, categorical_cols = preprocess_data(df_raw)
 rfc = train_random_forest(X_train, y_train)
 
